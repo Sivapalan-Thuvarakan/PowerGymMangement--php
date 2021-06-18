@@ -1,0 +1,492 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+html{
+	background:#dddddd;
+	
+}
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.back{
+	background:white;
+	height:auto;
+	width:800px;
+	margin:0 auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family:Century;
+	padding-bottom: 20px;
+}
+
+
+a{
+	text-decoration:none;
+}
+
+
+.navbar{
+	background:#663b95;
+	height:60px;
+	width:100%;	
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.list{
+	list-style:none;
+	text-align:right;
+}
+.list li{
+	display:inline;
+}
+
+.list li a{
+	text-decoration:none;
+	color:white;
+	line-height:50px;
+	padding:20px;
+	
+}
+.logo{
+	width: 60px;
+}
+h1,h2,h3,h4,h5,h6,label{
+	font-family:roboto;
+	color:#663b95;
+}
+
+.heading{
+	text-align:center;
+	margin-top:20px;
+}
+
+.btn{
+	border-radius:5px;
+	padding:10px;
+	background:#663b95;
+	color:white;
+	margin-top:40px;	
+}
+
+.btn:hover{
+	border-radius:5px;
+	padding:10px;
+	background:#8959bd;
+	color:white;
+	margin-top:40px;
+
+}
+
+.btnr{
+	border-radius:5px;
+	padding:5px;
+	background:#663b95;
+	color:white;
+	
+}
+
+.btnr:hover{
+	border-radius:5px;
+	padding:5px;
+	background:#ff5e5e;
+	color:white;
+	
+}
+
+
+.btnb{
+	border-radius:5px;
+	padding:5px;
+	background:#43a7bc;
+	color:white;
+
+}
+
+.btnb:hover{
+	border-radius:5px;
+	padding:5px;
+	background:#68b9ca;
+	color:white;
+
+
+}
+.log{
+	height:auto;
+	width:50%;
+	margin:0 auto;
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:40px;
+	
+	 -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cont{
+	height:auto;
+	width:50%;
+	margin:0 auto;
+	margin-top:20px;
+	padding:30px;
+	margin-bottom:40px;
+	text-align:center;
+	line-height:40px;
+	 -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sha{
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input{
+	height:20px;
+	width:90%;
+	padding:2px;
+	margin-top:10px;
+	
+}
+
+.input2{
+	width:80%;
+	height:40px;
+	margin-top:20px;
+	
+}
+
+
+
+label{
+	font-weight:bold;
+	
+}
+
+footer{
+	text-align:center;
+	color:white;
+	line-height:50px;
+
+	
+}
+
+.success{
+	background:green;
+	color:white;
+	line-height:30px;
+	border-radius:5px;
+	height:30px;
+	
+	text-align:center;
+	margin-bottom:10px;
+	
+}
+
+.crt
+{
+	color: green;
+}
+.err
+{
+	color: red;
+}
+
+
+.error{
+	background:#ff1515;
+	color:white;
+	line-height:30px;
+	border-radius:5px;
+	height:30px;
+	
+	text-align:center;
+	margin-bottom:10px;
+}
+
+
+
+
+
+.content1{
+	margin-top:30px;
+}
+
+.s{
+	list-style:none;
+	
+}
+
+
+
+.li{
+   
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 1px solid #ecf0f1; 
+}
+.imgs{
+	height:200px;
+	width:200px;
+	float:left;
+	margin:20px;
+	
+}
+
+.text{
+	text-align:center;		
+	
+}
+
+
+
+
+.footer{
+	background:#663b95;
+	height:60px;
+	width:100%;	
+	float:left;
+	position: fixed;
+ 	left: 0;
+  	bottom: 0;
+	top: auto; 
+
+}
+
+
+
+#section{
+	height:auto;
+	width:1400px;
+	margin-left:90px;
+	font-family:cambria;
+	
+}
+
+
+.sidebar{
+	width:400px;
+	height:auto;
+	margin-top:30px;
+	margin-right:30px;
+	float:left;
+	background:white;
+	
+}
+
+.content{
+	margin-top:30px;
+	height:auto;
+	width:950px;
+	float:left;	
+	
+}
+
+.content1{
+	margin-top:30px;
+	height:auto;
+	width:450px;
+	float:left;	
+	
+}
+.para{
+	text-align:justify;
+	padding:15px;
+	line-height:34px;
+	
+}
+#tablebody{
+	overflow-y: auto;
+	overflow-x: auto;
+	height: 600px;
+	width: 800px;
+	
+}
+.tbox{
+	float:left;
+	width:35%;
+}
+
+.tbox table{
+	border-collapse:collapse;
+	
+}
+
+tr,td,th{
+	padding:5px;
+}
+
+.table{
+	border-collapse:collapse;
+}
+
+.input3{
+	width:90%;
+	height:40px;
+	margin-top:20px;
+	
+}
+
+.input4{
+	width:90%;
+	height:40px;
+	margin-top:20px;
+	
+}
+
+.input5{
+	width:25%;
+	height:40px;
+	margin-top:20px;
+	margin-right:20px;
+	
+}
+.lbox{
+	
+	
+	width:45%;
+    margin-right:20px;
+	float:left;
+}
+
+.rbox{
+	
+
+	width:45%;
+
+	float:left;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+.lbox1{
+	
+	width:50%;
+   margin-right:20px;
+	float:left;
+}
+
+.rbox1{
+	width:45%;
+	float:left;
+}
+
+.rbox1 table{
+	width:100%;
+}
+
+textarea{
+	resize:none;width:90%;margin-top:20px;
+
+}
+
+.Output table
+{
+	width:100%;
+}
+
+.ibox{
+	width:65%;
+	float:left;	
+}
+
+.tsbox{
+
+	width:35%;
+	float:left;	
+	
+}
+.sidebar ul>li>ul{
+	width: auto;
+	position: relative;
+	background-color: #8959bd;
+	text-align: left;
+}
+.sidebar ul li a:hover{
+	color:red;
+}
+.sidebar>ul>li:hover>ul{
+	display: block;
+}
+.sidebar ul>li>ul{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: none;
+}
+
+/*card style*/
+.flip-card {
+	background-color: transparent;
+	width: 250px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: white;
+	color: #8959bd;
+	transform: rotateY(180deg);
+  }
+
+  /* Float four columns side by side */
+.cardcolumn {
+	float: left;
+	width: 25%;
+	padding: 20px 30px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .cardrow {margin: 0 15px;}
+  
+  /* Clear floats after the columns */
+  .cardrow:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+ 
