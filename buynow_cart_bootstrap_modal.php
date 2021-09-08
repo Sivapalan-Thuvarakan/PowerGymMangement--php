@@ -223,7 +223,7 @@ if(isset($_POST["name"])){
               <td>Item</td>
               <td>Quantity</td>
               <td>Price</td>
-              <td>Amount</td>
+              <td>A mount</td>
             </tr>';
     
       

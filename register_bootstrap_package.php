@@ -354,7 +354,7 @@ if(isset($_POST["name"])){
         </div>
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <label for="email">Emai l <span class="text-muted">(Optional)</span></label>
           <input type="email" class="form-control" id="email" name="email"placeholder="you@example.com" value='<?php echo $_SESSION["Email"] ?>'> 
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
