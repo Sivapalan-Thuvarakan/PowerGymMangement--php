@@ -251,13 +251,13 @@ if(isset($_POST["name"])){
           $mail->isSMTP();
           $mail->Host = 'smtp.gmail.com';
           $mail->SMTPAuth = true;
-          $mail->Username = 'thuvamit2017@gmail.com'; // Gmail address which you want to use as SMTP server
-          $mail->Password = 'thuva1999'; // Gmail address Password
+          $mail->Username = ''; // Gmail address which you want to use as SMTP server
+          $mail->Password = ''; // Gmail address Password
           $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
           $mail->Port = '587';
 
-          $mail->setFrom('awesomesolutions7@gmail.com'); // Gmail address which you used as SMTP server
-          $mail->addAddress('awesomesolutions7@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+          $mail->setFrom(''); // Gmail address which you used as SMTP server
+          $mail->addAddress(''); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
           $mail->addStringAttachment($pdf,"invoice.pdf");
 
