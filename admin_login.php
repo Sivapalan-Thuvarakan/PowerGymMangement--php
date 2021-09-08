@@ -2,6 +2,8 @@
 	include "database.php";
 	session_start();
 	$_SESSION["start"]=true;
+	unset ($_SESSION["TRID"]);
+	unset ($_SESSION["UID"]);
 
 ?>
 

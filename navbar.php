@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbarown">
 			<ul class="list">
 				<img style="width:60px;float:left;" src="images/logo/mylogo.png">
 				<b style="color:white;float:left;line-height:50px;margin-left:5px;font-family:Cooper Black;">

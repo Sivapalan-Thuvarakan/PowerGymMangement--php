@@ -29,7 +29,7 @@
 					</p>
 					
 					<p class="para">
-						This web based application has a powerful online community to bring Trainers,Trainees and Customes on a common interactive platform. It is a paperless office automation solution for today's modern schools. The School Management System provides the facility to carry out all day to day activities of the gym.
+						This web based application has a powerful online community to bring Trainers,Trainees and Customes on a common interactive platform. It is a paperless office automation solution for today's modern Gym and Fitness centres. The Power Gym Management System provides the facility to carry out all day to day activities of the gym.
 					</p>
 				</div>
 				

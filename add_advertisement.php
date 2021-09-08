@@ -80,7 +80,7 @@
 					
 				</form>
 				</div>
-				<div class="tbox">
+				
 					<h3 style="margin-top:30px;"> Product Details</h3><br>
 					<?php
 						if(isset($_GET["mes"]))
@@ -89,9 +89,9 @@
 						}
 					
 					?>
-                    <div id="table">
-					<table border="1px" >
-						
+                     <div  style="margin-right: 20px;margin-bottom: 70px;height: 600px; overflow: hidden;">
+                  	<table class="styled-table">
+						<thead>
                             <tr>
                                 <th>Advertisement ID</th>
                                 <th>Image</th>
@@ -99,7 +99,8 @@
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
-                        
+						</thead>
+						<tbody>
 				 	<?php
 							$s="select * from advertisement";
 							$res=$db->query($s);
@@ -123,10 +124,9 @@
 								
 							}
 						?>
-					
+						</tbody>
 					</table>
                         </div>
-				</div>
 			</div>
 	
 				<?php include"footer.php";?>

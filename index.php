@@ -2,6 +2,7 @@
 	include "database.php";
     session_start();
     unset ($_SESSION["AID"]);
+    unset ($_SESSION["TRID"]);
     unset($_SESSION["start"]);
 ?>
 <!DOCTYPE html>
@@ -40,13 +41,13 @@
                             {
 
                               //we are using get method to send product ID to view_addtocart_product
-                              echo '<p><a href="view_addtocart_product.php?id='. $row['Product_ID'] .'" class="btn btn-success">View Details</a>
-                              <a href="buynow_bootstrap_modal.php?id='. $row['Product_ID'] .'" class="btn btn-success">Buynow</a></p></div>';
+                              echo '<p><a href="view_addtocart_product.php?id='. $row['Product_ID'] .'" class="btn btn-success">Add to Cart</a>
+                              <a href="buynow_bootstrap_modal.php?id='. $row['Product_ID'] .'" class="btn btn-success">Buynow11</a></p></div>';
                             }
                             else
                             {
                               
-                              echo '<p><a href="#" data-toggle="modal" data-target="#showTerms" class="btn btn-success">View Details</a>
+                              echo '<p><a href="#" data-toggle="modal" data-target="#showTerms" class="btn btn-success">Add to Cart</a>
                               <a href="#" data-toggle="modal" data-target="#showTerms"   class="btn btn-success">Buynow</a></p>
                               </div>';
                             }
@@ -85,7 +86,3 @@
 
 </body>
 </html>
-
-
-<!--<p><a href="view_addtocart_product.php?id='. $row['Product_ID'] .'" class="btn btn-success">View Details</a>
-<a href="buynow_bootstrap_modal.php?id='. $row['Product_ID'] .'" class="btn btn-success">Buynow</a></p>-->

@@ -28,7 +28,7 @@ a{
 }
 
 
-.navbar{
+.navbarown{
 	background:#663b95;
 	height:60px;
 	width:100%;	
@@ -183,7 +183,6 @@ footer{
 	line-height:30px;
 	border-radius:5px;
 	height:30px;
-	
 	text-align:center;
 	margin-bottom:10px;
 	
@@ -211,13 +210,6 @@ footer{
 }
 
 
-
-
-
-.content1{
-	margin-top:30px;
-	margin-bottom:70px;
-}
 
 .s{
 	list-style:none;
@@ -259,7 +251,7 @@ footer{
 	position: fixed;
  	left: 0;
   	bottom: 0;
-	top: auto; 
+	top: auto;  
 
 }
 
@@ -267,17 +259,19 @@ footer{
 
 #section{
 	height: 0px;
-	width:100%;
-	margin-left:90px;
+	width:98%;
+	margin-left:30px;
+	margin-right:30px;
 	font-family:cambria;	
 }
 
 
 .sidebar{
-	width:300px;
+	width:15%;
 	height:auto;
 	margin-top: 100px;
-	margin-right:30px;
+	margin-right:20px;
+	margin-left:0px;
 	float:left;
 	background:white;
 	margin-bottom:100px;
@@ -285,18 +279,26 @@ footer{
 
 .content{
 	margin-top:30px;
-	margin-right: 150px;
+	margin-bottom:70px;
+	margin-left: 50px;
+	margin-right: 50px;
 	height:auto;
-	width:950px;
+	width:auto;
+	 min-width: 700px; 
+	max-width: 950px; 
+	 
+	/* margin: auto; */
 	float:left;	
 	
 }
 
 .content1{
 	margin-top:30px;
+	margin-left:30px;
 	height:auto;
-	width:450px;
+	width:30%;
 	float:left;	
+	margin-bottom:70px;
 	
 }
 .para{
@@ -314,10 +316,13 @@ footer{
 }
 .tbox{
 	float:left;
+	width: 35%;
+	margin-left: 30px;
 }
 
 .tbox table{
 	border-collapse:collapse;
+	
 	
 }
 
@@ -490,3 +495,58 @@ textarea{
 	clear: both;
   }
  
+
+
+
+  /*table design*/
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color:#8959bd;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #8959bd;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+#header-fixed {
+    position: fixed;
+    top: 0px; display:none;
+}
+
+/* #myLine{
+
+	width:500px !important;
+	height:300px !important;
+  
+  } */
+
+

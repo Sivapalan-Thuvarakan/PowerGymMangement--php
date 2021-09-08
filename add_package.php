@@ -90,8 +90,7 @@
 					
 				</form>
 				</div>
-				<div class="tbox" style="margin-bottom: 70px;">
-					<h3 style="margin-top:30px;"> Product Details</h3><br>
+					<h3 style="margin-top:30px;"> Package Details</h3><br>
 					<?php
 						if(isset($_GET["mes"]))
 						{
@@ -99,9 +98,9 @@
 						}
 					
 					?>
-                    <div id="table">
-					<table border="1px" >
-						
+                   <div  style="margin-right: 20px;margin-bottom: 70px;height: 600px; overflow: hidden;">
+                  <table class="styled-table">
+						<thead>
                             <tr>
                                 <th>Package ID</th>
                                 <th>package name</th>
@@ -112,6 +111,7 @@
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
+					</thead>
                         
 				 	<?php
 							$s="select * from package";
@@ -142,7 +142,6 @@
 					
 					</table>
                         </div>
-				</div>
 			</div>
 	
 				<?php include"footer.php";?>

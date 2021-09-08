@@ -1,6 +1,8 @@
 <?php
 	include"database.php";
 	session_start();
+	unset ($_SESSION["AID"]);
+	unset ($_SESSION["UID"]);
 ?>
 
 <!DOCTYPE html>

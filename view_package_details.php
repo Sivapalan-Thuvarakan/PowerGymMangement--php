@@ -34,12 +34,13 @@
 							
 						</div>
 						<div class="tsbox">
-						<table border="1px">
-						
+						<table  class="styled-table">
+						<tbody>
 							<tr><th>Package Name </th> <td> <?php echo $row["Package_name"]; ?></td></tr>
 							<tr><th>Description</th> <td> <?php echo $row["Package_Description"]; ?></td></tr>
 							<tr><th>Duration</th> <td> <?php echo $row["Duration"]; ?></td></tr>
 							<tr><th>price </th> <td> <?php echo $row["Price"]; ?></td></tr>
+						</tbody>
 						</table>
 						
 						</div>

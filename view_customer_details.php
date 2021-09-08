@@ -7,7 +7,7 @@
 		
 	}
 	$sql="select customer.Customer_ID,user.User_name,user.First_name,user.Last_name,user.Tel_no,user.Email,
-    customer.Address,customer.Image,customer.DOB,customer.Gender from user,customer where user.User_ID=customer.Customer_ID";
+    customer.Address,customer.Image,customer.DOB,customer.Gender from user,customer where user.User_ID={$_GET["id"]}";
 		$res=$db->query($sql);
 
 		if($res->num_rows>0)
@@ -34,9 +34,9 @@
 							<img src="images/customers/<?php echo $row["Image"]; ?>" height="230" width="230">
 							
 						</div>
-						<div class="tsbox">
-						<table border="1px">
-						
+		
+                  		<table class="styled-table">
+						<tbody>
 							<tr><th>User Name </th> <td> <?php echo $row["User_name"]; ?></td></tr>
 							<tr><th>First name</th> <td> <?php echo $row["First_name"]; ?></td></tr>
 							<tr><th>Last name</th> <td> <?php echo $row["Last_name"]; ?></td></tr>
@@ -45,9 +45,8 @@
                             <tr><th>Address</th> <td> <?php echo $row["Address"]; ?></td></tr>
 							<tr><th>DOB </th> <td> <?php echo $row["DOB"]; ?></td></tr>
                             <tr><th>Gender </th> <td> <?php echo $row["Gender"]; ?></td></tr>
+						</tbody>
 						</table>
-						
-						</div>
 				</div>	
 			</div>
 			<?php include"footer.php";?>

@@ -21,7 +21,6 @@
 				<?php include"sidebar.php";?><br>
 				<h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><br><hr><br>
 				<h3 >Customer Details</h3><br>
-                	<div class="tbox">
 					
 					<?php
 						if(isset($_GET["mes"]))
@@ -30,7 +29,9 @@
 						}
 					
 					?>
-					<table border="1px" >
+					<div  style="margin-right: 20px;margin-bottom: 70px;height: 600px; overflow-y: scroll; overflow-x: hidden;">
+                  	<table class="styled-table">
+						<thead>
 						<tr>
 							<th>Customer_ID</th>
                             <th>First_name</th>
@@ -44,6 +45,8 @@
                             <th>View</th>
 							<th>Remove</th>
 						</tr>
+						</thead>
+						<tbody>
 						<?php
 							$s="select customer.Customer_ID,user.User_name,user.First_name,user.Last_name,user.Tel_no,user.Email,
 							customer.Address,customer.Image,customer.DOB,customer.Gender from user,customer where user.User_ID=customer.Customer_ID
@@ -73,11 +76,11 @@
 								
 							}
 						?>
-					
+					</tbody>
 					</table>
 				</div>
 			</div>
-	
+		
 				<?php include"footer.php";?>
 	</body>
 </html>

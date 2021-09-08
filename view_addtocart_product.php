@@ -3,6 +3,7 @@
     session_start();
     unset ($_SESSION["AID"]);
     unset($_SESSION["start"]);
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,30 +18,31 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  
+
 <div style="height: 1000px;" class="container">
   <div class="row">
 			<h1>Add To Cart In PHP</h1><hr>
-			<a href='viewCart.php'>View Cart</a>
+			<a href='viewcart.php'>View Cart</a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href='index.php'>Back</a>
 			<?php 
 			if(isset($_POST["addCart"])){
+				//$_SESSION["cart"] is a cart table
 				if(isset($_SESSION["cart"]))
 				{
-					$pid_array=array_column($_SESSION["cart"],"pid");
-					if(!in_array($_GET["id"],$pid_array))
+					$pid_array=array_column($_SESSION["cart"],"pid");//product id of cart items will be stored in array $pid_array
+					if(!in_array($_GET["id"],$pid_array))//check got id available in $pid_array
 					{
-						$index=count($_SESSION["cart"]);
+						$index=count($_SESSION["cart"]);//store size of cart
 						$item=array(
 							'pid' => $_GET["id"],
 							'pname' => $_POST["pname"],
 							'price' => $_POST["price"],
 							'qty' => $_POST["qty"]
-						);
-						$_SESSION["cart"][$index]=$item;
+						);//create array item for store detail of selected item
+						$_SESSION["cart"][$index]=$item;//add new product to cart //
 							echo "<script>alert('Product Added..');</script>";
-						header("location:viewCart.php");
+						header("location:viewcart.php");
 					}
 					else
 					{
@@ -57,7 +59,7 @@
 						);
 						$_SESSION["cart"][0]=$item;
 						echo "<script>alert('Product Added..');</script>";
-						header("location:viewCart.php");
+						header("location:viewcart.php");
 				}
 			}
 			

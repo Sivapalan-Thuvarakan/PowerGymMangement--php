@@ -12,4 +12,6 @@
                             <tr><th>Package</th> <td> <?php echo $rowtrainee["Package"] ?> </td></tr>
                             <tr><th>Status</th> <td> <?php echo $rowtrainee["Package_status"] ?> </td></tr>
                             <tr><th>DOB</th> <td> <?php echo $rowtrainee["DOB"] ?>  </td></tr>
+							<tr><th>Medical_Report</th> <td> <a href='<?php echo $rowmedical["Medical_Report"] ?>'>Medical Report</a> </td></tr>
+							<tr><th>Exercise Diet plan</th> <td> <a href='<?php echo $rowexercise["Exercise_file"] ?>'>Exercise and Diet plan</a> </td></tr>
 </table>

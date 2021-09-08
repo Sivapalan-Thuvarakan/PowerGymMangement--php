@@ -48,6 +48,7 @@
 							{
 								$amt=$values["qty"]*$values["price"];
 									$total+=$amt;
+									$_SESSION["total"]=$total;
 									echo "
 											<tr>
 												<td>{$values["pname"]}</td>
@@ -72,7 +73,7 @@
 				?>
 			</table>
             
-			<p ><a style="float:right;" href="buynow_bootstrap_modal.php?id='. $row['Product_ID'] .'" class="btn btn-success">Buynow</a></p>
+			<p ><a style="float:right;" href="buynow_cart_bootstrap_modal.php?id='. $row['Product_ID'] .'" class="btn btn-success">Buynow</a></p>
   </div>
 </div>
 <div class="footer">

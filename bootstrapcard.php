@@ -1,7 +1,7 @@
 <?php $s="SELECT COUNT(Customer_ID) as total FROM customer";
 	  $res=$db->query($s); 
 
-      $s1="SELECT SUM(Payment) as total FROM `order` WHERE Date";
+      $s1="SELECT SUM(subtotal) as total FROM `order_item`";
 	  $res1=$db->query($s1); 
 
       $s2="SELECT COUNT(Trainer_ID) as total FROM trainer";

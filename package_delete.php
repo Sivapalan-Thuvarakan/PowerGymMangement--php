@@ -1,3 +1,7 @@
+<script>
+  alert("do you want to delete?");
+</script>
+
 <?php
 	include"database.php";
 	session_start();

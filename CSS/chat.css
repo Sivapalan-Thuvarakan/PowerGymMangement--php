@@ -1,0 +1,58 @@
+#msg
+{
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: blue;
+    width: 100%;
+}
+
+#messagebox
+{
+    width: 80%;
+    height: 380px;
+    background-color:#C0C0C0;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 120px;
+    overflow: auto;
+}
+
+#user_name
+{
+    color: rgb(167, 4, 4);
+    float: left;
+}
+
+#time
+{
+    color: blue;
+    float: right;
+  
+}
+#message
+{
+    display: block;
+    color: black;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+#send
+{
+        border-radius:5px;
+        background:#663b95;
+        color:white;
+        padding:7px;
+        margin: 10px;
+        float: right;
+}
+#status
+{
+    margin-left: 50px;
+}

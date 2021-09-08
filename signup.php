@@ -32,8 +32,10 @@
 							if($_POST["urole"]=='trainee')
 							{
 							
-								$sql="INSERT INTO trainee (Trainee_ID,Trainer_ID,Gender,Package_status,Package) VALUES($s,2,'not selected','none','no package')";
-								
+								$sql1="INSERT INTO trainee (Trainee_ID,Trainer_ID,Gender,Package_status,Package) VALUES($s,2,'not selected','none','no package')";
+								$sql="INSERT INTO `customer`(`Customer_ID`) 
+								VALUES($s)";
+								$db->query($sql1);
 								$db->query($sql);
 							}
 							if($_POST["urole"]=='customer')

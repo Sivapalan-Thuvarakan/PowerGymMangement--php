@@ -118,7 +118,6 @@
 					<?php endif;?>
 				</form>
 				</div>
-				<div class="tbox" style="margin-bottom: 70px;">
 					<h3 style="margin-top:30px;"> Trainer Details</h3><br>
 					<?php
 						if(isset($_GET["mes"]))
@@ -127,19 +126,23 @@
 						}
 					
 					?>
-					<table border="1px" style="margin-bottom: 70px;" >
-						<tr>
-							<th>Trainer_ID</th>
-                            <th>Trainer Name</th>
-							<th>Gender</th>
-							<th>Address</th>
-							<th>DOB</th>
-							<th>CV</th>
-							<th>User Name</th>
-                            <th>Password</th>
-                            <th>Edit</th>
-							<th>Delete</th>
-						</tr>
+					 <div  style="margin-right: 10px;margin-bottom: 70px;height: 600px; overflow: hidden;">
+                 	 <table class="styled-table">
+						<thead>
+							<tr>
+								<th>Trainer_ID</th>
+								<th>Trainer Name</th>
+								<th>Gender</th>
+								<th>Address</th>
+								<th>DOB</th>
+								<th>CV</th>
+								<th>User Name</th>
+								<th>Password</th>
+								<th>Edit</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
 						<?php
 							$s="select * from trainer";
 							$res=$db->query($s);
@@ -166,7 +169,7 @@
 								
 							}
 						?>
-					
+					</tbody>
 					</table>
 				</div>
 
